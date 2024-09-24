@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <!-- Tailwind & Daisy UI Styles Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,17 +27,17 @@
 
 <body class="lexend-font">
     <header class="container mx-auto px-6 mt-12 ">
-        <nav class="bg-[#F9F7F3] p-4">
+        <nav class="bg-[#F9F7F3] p-4 ">
             <div class="navbar ">
                 <div class="navbar-start">
                     <a class="btn btn-ghost text-xl px-8 bg-[#B4F461]" href="./blog.html">Blog</a>
                 </div>
                 <div class="navbar-center items-center lg:flex gap-4">
                     <img src="./images/logo.png" alt="">
-                    <p class="text-lg font-extrabold">Donate Bangladesh</p>
+                    <p class="text-lg font-extrabold hidden lg:flex">Donate Bangladesh</p>
                 </div>
                 <div class="navbar-end">
-                    <img src="images/coin.png" alt="">
+                    <img src="./images/coin.png" alt="">
                     <p class="pl-2"><span id="account-balance">5500</span> BDT</p>
                 </div>
             </div>
@@ -60,10 +60,10 @@
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/noakhali.png" class=" rounded-lg shadow-2xl" />
+                        <img src="./images/noakhali.png" class=" rounded-lg shadow-2xl" />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
-                                <img src="images/coin.png" alt="">
+                                <img src="./images/coin.png" alt="">
                                 <p class="pl-2"><span id="old-donation-balance">7800</span> BDT</p>
                             </div>
                             <h1 id="flood-area" class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -120,10 +120,10 @@
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/feni.png" class=" rounded-lg shadow-2xl" />
+                        <img src="./images/feni.png" class=" rounded-lg shadow-2xl" />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
-                                <img src="images/coin.png" alt="">
+                                <img src="./images/coin.png" alt="">
                                 <p class="pl-2"><span id="old-donation-balance-02">1830</span> BDT</p>
                             </div>
                             <h1 id="flood-area-02" class="text-2xl font-bold">Donate for Flood Relief in Feni,
@@ -138,12 +138,12 @@
                             </p>
                             <input id="input-field-value-02" class="p-4 w-full border border-gray-300 rounded-lg"
                                 type="text" placeholder="Write Donation Amount"> <br>
-                                
+
                             <button id="btn-donate-02" onclick="my_modal_5.showModal()"
                                 class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
                                 Now</button>
 
-                           
+
                         </div>
                     </div>
                 </div>
@@ -154,14 +154,15 @@
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/lakshmipur.jpg" class="lg:w-[50%] rounded-lg shadow-2xl"
+                        <img src="./images/lakshmipur.jpg" class="lg:w-[50%] rounded-lg shadow-2xl"
                             alt="Image Loading..." />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
-                                <img src="images/coin.png" alt="">
+                                <img src="./images/coin.png" alt="">
                                 <p class="pl-2"><span id="old-donation-balance-03">2980</span> BDT</p>
                             </div>
-                            <h1 id="flood-area-03" class="text-2xl font-bold">Donate for Flood at Lakshmipur, Bangladesh</h1>
+                            <h1 id="flood-area-03" class="text-2xl font-bold">Donate for Flood at Lakshmipur, Bangladesh
+                            </h1>
                             <p class="py-8 text-justify">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
                                 Your
@@ -170,9 +171,9 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input id="input-field-value-03" class="p-4 w-full border border-gray-300 rounded-lg" type="text"
-                                placeholder="Write Donation Amount"> <br>
-                                <button id="btn-donate-03" onclick="my_modal_5.showModal()"
+                            <input id="input-field-value-03" class="p-4 w-full border border-gray-300 rounded-lg"
+                                type="text" placeholder="Write Donation Amount"> <br>
+                            <button id="btn-donate-03" onclick="my_modal_5.showModal()"
                                 class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
                                 Now</button>
                         </div>
@@ -185,13 +186,15 @@
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/sylhet.jpg" class=" lg:w-[50%] rounded-lg shadow-2xl" alt="Image Loading..." />
+                        <img src="./images/sylhet.jpg" class=" lg:w-[50%] rounded-lg shadow-2xl"
+                            alt="Image Loading..." />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
-                                <img src="images/coin.png" alt="Image Loading...">
+                                <img src="./images/coin.png" alt="Image Loading...">
                                 <p class="pl-2"><span id="old-donation-balance-04">1250</span> BDT</p>
                             </div>
-                            <h1 id="flood-area-04" class="text-2xl font-bold">Donate for Flood at Sylhet, Bangladesh</h1>
+                            <h1 id="flood-area-04" class="text-2xl font-bold">Donate for Flood at Sylhet, Bangladesh
+                            </h1>
                             <p class="py-8 text-justify">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
                                 Your
@@ -200,9 +203,9 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input id="input-field-value-04" class="p-4 w-full border border-gray-300 rounded-lg" type="text"
-                                placeholder="Write Donation Amount"> <br>
-                                <button id="btn-donate-04" onclick="my_modal_5.showModal()"
+                            <input id="input-field-value-04" class="p-4 w-full border border-gray-300 rounded-lg"
+                                type="text" placeholder="Write Donation Amount"> <br>
+                            <button id="btn-donate-04" onclick="my_modal_5.showModal()"
                                 class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
                                 Now</button>
                         </div>
@@ -216,7 +219,7 @@
 
         <div id="history-container" class="history-section hidden ">
 
-            <h2 class="text-center text-3xl font-bold">Our Donation History</h2>
+          
 
 
         </div>
