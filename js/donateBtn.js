@@ -1,68 +1,160 @@
-console.log('Donate Now')
-
+// section-0----->
 document.getElementById('btn-donate').addEventListener('click', function (event) {
-    event.preventDefault();
+    event.preventDefault(); 
+
     const addDonation = getInputFieldValueById('input-field-value');
-    //console.log(addDonation);
-
-    const pageBalance = getTextValueById('page-balance');
-    //console.log(donationBalance);
-
+    const accountBalance = getTextValueById('account-balance');
     const floodArea = getTextValueById('flood-area');
-    console.log(floodArea);
-
     const oldDonation = getTextValueById('old-donation-balance');
-    console.log(oldDonation);
 
+    if ((addDonation > 0) && (typeof parseFloat(addDonation) === 'number')) {
 
-    //const createElementByTag = getTextValueById('history-container');
-    //console.log(oldDonation);
-
-
-
-    if (  (addDonation > 0) && (typeof parseFloat(addDonation) === 'number')) {
-
+        if(parseFloat(addDonation) > parseFloat(accountBalance)){
+            alert('Invalid Donation Amount');
+            return;
+        }
         const updateDonation = parseFloat(addDonation) + parseFloat(oldDonation);
         console.log(updateDonation);
         document.getElementById('old-donation-balance').innerText = updateDonation;
 
-        const newPageBalance = parseFloat(pageBalance) - parseFloat(addDonation);
+        const newPageBalance = parseFloat(accountBalance) - parseFloat(addDonation);
         console.log(newPageBalance);
-        document.getElementById('page-balance').innerText = newPageBalance
+        document.getElementById('account-balance').innerText = newPageBalance
 
         const currentTime = new Date()
-        const createPara = document.querySelector('#history-container');
-
         const div = document.createElement('div')
-        //console.log(div);
         div.innerHTML = `
-            <div class="border font-bold bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
-                <p>${addDonation} Taka is ${floodArea}</p>
-                <p>${currentTime}</p>
+            <div class="border  bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
+                <p class=" text-lg font-bold ">${addDonation} Taka is ${floodArea}</p>
+                <p class=" ">${currentTime}</p>
             </div>
             `
-        // const para1 = document.createElement('p');
-        // para1.innerText = `${addDonation} Taka is ${floodArea} `;
+        document.getElementById('history-container').appendChild(div)
 
-        // const para2 = document.createElement('p');
-        // para2.innerText = `${addDonation} Taka is money ${floodArea} `;
-
-        // div.appendChild(para1);
-        // div.appendChild(para2);
-
-        //     const div = document.createElement('div')
-        //     console.log(para);
-
-        //     para.innerText = `
-        //     ${addDonation} Taka is ${floodArea} 
-        //    Data
-        //      `;
-        createPara.appendChild(div);
-        console.log(createPara)
     }
 
     else {
-        alert('Invalid Donation Amount')
+        alert('Invalid Donation Amount');
     }
 
+})
+
+
+// section-2----->
+document.getElementById('btn-donate-02').addEventListener('click', function (event) {
+    event.preventDefault(); 
+
+    const addDonation = getInputFieldValueById('input-field-value-02');
+    const accountBalance = getTextValueById('account-balance');
+    const floodArea = getTextValueById('flood-area-02');
+    const oldDonation = getTextValueById('old-donation-balance-02');
+
+    if ((addDonation > 0) && (typeof parseFloat(addDonation) === 'number')) {
+
+        if(parseFloat(addDonation) > parseFloat(accountBalance)){
+            alert('Invalid Donation Amount');
+            return;
+        }
+        const updateDonation = parseFloat(addDonation) + parseFloat(oldDonation);
+        console.log(updateDonation);
+        document.getElementById('old-donation-balance-02').innerText = updateDonation;
+
+        const newPageBalance = parseFloat(accountBalance) - parseFloat(addDonation);
+        console.log(newPageBalance);
+        document.getElementById('account-balance').innerText = newPageBalance
+
+        const currentTime = new Date()
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="border  bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
+                <p class=" text-lg font-bold ">${addDonation} Taka is ${floodArea}</p>
+                <p class=" ">${currentTime}</p>
+            </div>
+            `
+        document.getElementById('history-container').appendChild(div)
+
+    }
+
+    else {
+        alert('Invalid Donation Amount');
+    }
+
+})
+
+
+// section-3----->
+document.getElementById('btn-donate-03').addEventListener('click', function (event) {
+    event.preventDefault(); 
+
+    const addDonation = getInputFieldValueById('input-field-value-03');
+    const accountBalance = getTextValueById('account-balance');
+    const floodArea = getTextValueById('flood-area-03');
+    const oldDonation = getTextValueById('old-donation-balance-03');
+
+    if ((addDonation > 0) && (typeof parseFloat(addDonation) === 'number')) {
+
+        if(parseFloat(addDonation) > parseFloat(accountBalance)){
+            alert('Invalid Donation Amount');
+            return;
+        }
+        const updateDonation = parseFloat(addDonation) + parseFloat(oldDonation);
+        document.getElementById('old-donation-balance-03').innerText = updateDonation;
+        const newPageBalance = parseFloat(accountBalance) - parseFloat(addDonation);
+        document.getElementById('account-balance').innerText = newPageBalance
+
+        const currentTime = new Date()
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="border  bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
+                <p class=" text-lg font-bold ">${addDonation} Taka is ${floodArea}</p>
+                <p class=" ">${currentTime}</p>
+            </div>
+            `
+        document.getElementById('history-container').appendChild(div)
+
+    }
+
+    else {
+        alert('Invalid Donation Amount');
+    }
+
+})
+
+
+// section-4----->
+document.getElementById('btn-donate-04').addEventListener('click', function (event) {
+    event.preventDefault(); 
+
+    const addDonation = getInputFieldValueById('input-field-value-04');
+    const accountBalance = getTextValueById('account-balance');
+    const floodArea = getTextValueById('flood-area-04');
+    const oldDonation = getTextValueById('old-donation-balance-04');
+
+    if ((addDonation > 0) && (typeof parseFloat(addDonation) === 'number')) {
+
+        if(parseFloat(addDonation) > parseFloat(accountBalance)){
+            alert('Invalid Donation Amount');
+            return;
+        }
+        const updateDonation = parseFloat(addDonation) + parseFloat(oldDonation);
+        document.getElementById('old-donation-balance-04').innerText = updateDonation;
+        const newPageBalance = parseFloat(accountBalance) - parseFloat(addDonation);
+        document.getElementById('account-balance').innerText = newPageBalance
+
+        const currentTime = new Date()
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="border  bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
+                <p class=" text-lg font-bold ">${addDonation} Taka is ${floodArea}</p>
+                <p class=" ">${currentTime}</p>
+            </div>
+            `
+        document.getElementById('history-container').appendChild(div);
+     
+    }
+
+    else {
+        alert('Invalid Donation Amount');
+    }
+ 
 })

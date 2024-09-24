@@ -38,7 +38,7 @@
                 </div>
                 <div class="navbar-end">
                     <img src="images/coin.png" alt="">
-                    <p class="pl-2"><span id="page-balance">5500</span> BDT</p>
+                    <p class="pl-2"><span id="account-balance">5500</span> BDT</p>
                 </div>
             </div>
         </nav>
@@ -55,7 +55,7 @@
 
         <div id="donation-container" class="donation-section ">
 
-            <!-- Donation Section-01 -->
+            <!-- Donation Area Section-01 -->
             <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
@@ -77,7 +77,7 @@
                             </p>
                             <input id="input-field-value" class="p-4 w-full border border-gray-300 rounded-lg"
                                 type="text" placeholder="Write Donation Amount"> <br>
-                                
+
                             <button id="btn-donate" onclick="my_modal_5.showModal()"
                                 class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
                                 Now</button>
@@ -115,7 +115,7 @@
                 </div>
             </section>
 
-            <!-- Donation Section-02 -->
+            <!-- Donation Area Section-02 -->
             <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
@@ -124,9 +124,10 @@
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="">
-                                <p class="pl-2"><span>1830</span> BDT</p>
+                                <p class="pl-2"><span id="old-donation-balance-02">1830</span> BDT</p>
                             </div>
-                            <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
+                            <h1 id="flood-area-02" class="text-2xl font-bold">Donate for Flood Relief in Feni,
+                                Bangladesh</h1>
                             <p class="py-8 text-justify">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
                                 Your
@@ -135,15 +136,20 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input class="p-4 w-full border border-gray-300 rounded-lg" type="text"
-                                placeholder="Write Donation Amount"> <br>
-                            <button class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate Now</button>
+                            <input id="input-field-value-02" class="p-4 w-full border border-gray-300 rounded-lg"
+                                type="text" placeholder="Write Donation Amount"> <br>
+                                
+                            <button id="btn-donate-02" onclick="my_modal_5.showModal()"
+                                class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
+                                Now</button>
+
+                           
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Donation Section-03 -->
+            <!-- Donation Area Section-03 -->
             <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
@@ -153,9 +159,9 @@
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="">
-                                <p class="pl-2"><span>2980</span> BDT</p>
+                                <p class="pl-2"><span id="old-donation-balance-03">2980</span> BDT</p>
                             </div>
-                            <h1 class="text-2xl font-bold">Donate for Flood at Lakshmipur, Bangladesh</h1>
+                            <h1 id="flood-area-03" class="text-2xl font-bold">Donate for Flood at Lakshmipur, Bangladesh</h1>
                             <p class="py-8 text-justify">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
                                 Your
@@ -164,15 +170,17 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input class="p-4 w-full border border-gray-300 rounded-lg" type="text"
+                            <input id="input-field-value-03" class="p-4 w-full border border-gray-300 rounded-lg" type="text"
                                 placeholder="Write Donation Amount"> <br>
-                            <button class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate Now</button>
+                                <button id="btn-donate-03" onclick="my_modal_5.showModal()"
+                                class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Donation Section-04 -->
+            <!-- Donation Area Section-04 -->
             <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
@@ -181,9 +189,9 @@
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="Image Loading...">
-                                <p class="pl-2"><span>1250</span> BDT</p>
+                                <p class="pl-2"><span id="old-donation-balance-04">1250</span> BDT</p>
                             </div>
-                            <h1 class="text-2xl font-bold">Donate for Flood at Sylhet, Bangladesh</h1>
+                            <h1 id="flood-area-04" class="text-2xl font-bold">Donate for Flood at Sylhet, Bangladesh</h1>
                             <p class="py-8 text-justify">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
                                 Your
@@ -192,9 +200,11 @@
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input class="p-4 w-full border border-gray-300 rounded-lg" type="text"
+                            <input id="input-field-value-04" class="p-4 w-full border border-gray-300 rounded-lg" type="text"
                                 placeholder="Write Donation Amount"> <br>
-                            <button class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate Now</button>
+                                <button id="btn-donate-04" onclick="my_modal_5.showModal()"
+                                class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
