@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <!-- Tailwind & Daisy UI Styles Link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- Tailwind & Daisy UI Styles Link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font Lexend link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google Font Lexend link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-    <style>
-        .lexend-font {
-            font-family: "Lexend", sans-serif;
-            font-style: normal;
-        }
-    </style>
+  <style>
+    .lexend-font {
+      font-family: "Lexend", sans-serif;
+      font-style: normal;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body class="lexend-font">
-    <header class="container mx-auto px-6 mt-12 ">
-        <nav class="bg-yellow-100 p-4">
-            <div class="navbar ">
-                <div class="navbar-start">
+  <header>
+    <section class="bg-[#faedd4]  p-12">
 
-                    <!-- <a class="btn btn-ghost text-xl bg-[#B4F461]">Home</a> -->
-                    <a class="btn btn-ghost text-xl bg-[#B4F461]" href="./index.html">Home</a>
-                </div>
-                <div class="navbar-center items-center lg:flex gap-4">
-                    <img src="images/logo.png" alt="">
-                    <p class="text-lg font-extrabold hidden lg:flex">Donate Bangladesh</p>
-                </div>
-                <div class="navbar-end">
-                    <img src="images/coin.png" alt="">
-                    <p class="pl-2"><span>5500</span> BDT</p>
-                </div>
-            </div>
-        </nav>
+      <nav class="container mx-auto px-6  ">
+        <div class="navbar ">
+          <div class="navbar-start">
 
-    </header>
-
-
-    <section class="container mx-auto px-6 mt-32 ">
-
-      <h1 class="text-4xl font-extrabold p-4 my-4">Important FAQ?</h1>
-        <div class="join join-vertical w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-xl font-bold">What is a DOM element?
-                </div>
-              <div class="collapse-content">
-                <p>A DOM element is an object that represents an element in an HTML document. It provides properties and methods to manipulate the content, structure, and style of the element.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-bold">What is the difference between querySelector and querySelectorAll?</div>
-              <div class="collapse-content">
-                <p>
-                  The querySelector method returns the first element that matches a specified CSS selector(s), while the querySelectorAll method returns all elements that match the CSS selector(s).</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-bold">How to add an event listener to a DOM element?</div>
-              <div class="collapse-content">
-                <p>
-                  You can use the addEventListener method to add an event listener to a DOM element. The method takes two parameters: the event type and the event handler function.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-bold">How to create a new DOM element?</div>
-              <div class="collapse-content">
-                <p>
-                  You can use the createElement method to create a new DOM element. The method takes one parameter: the tag name of the element.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-bold">How to remove an event listener from a DOM element?</div>
-              <div class="collapse-content">
-                <p>
-                  You can use the removeEventListener method to remove an event listener from a DOM element. The method takes the same parameters as the addEventListener method.</p>
-              </div>
-            </div>
+            <a class="btn btn-ghost text-xl bg-[#B4F461]" href="./index.html">Home</a>
           </div>
-
+          <div class="navbar-center items-center lg:flex gap-4">
+            <img src="images/logo.png" alt="">
+            <p class="text-lg font-extrabold hidden lg:flex">Donate Bangladesh</p>
+          </div>
+          <div class="navbar-end">
+            <img src="images/coin.png" alt="">
+            <p class="pl-2"><span>5500</span> BDT</p>
+          </div>
+        </div>
+      </nav>
     </section>
+
+  </header>
+
+
+  <section class="container mx-auto px-6 mt-32 ">
+
+    <h1 class="text-4xl font-extrabold p-4 my-4">Important FAQ?</h1>
+    <div class="join join-vertical w-full">
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-bold">What is a DOM element?
+        </div>
+        <div class="collapse-content">
+          <p>A DOM element is an object that represents an element in an HTML document. It provides properties and
+            methods to manipulate the content, structure, and style of the element.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-bold">What is the difference between querySelector and querySelectorAll?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The querySelector method returns the first element that matches a specified CSS selector(s), while the
+            querySelectorAll method returns all elements that match the CSS selector(s).</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-bold">How to add an event listener to a DOM element?</div>
+        <div class="collapse-content">
+          <p>
+            You can use the addEventListener method to add an event listener to a DOM element. The method takes two
+            parameters: the event type and the event handler function.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-bold">How to create a new DOM element?</div>
+        <div class="collapse-content">
+          <p>
+            You can use the createElement method to create a new DOM element. The method takes one parameter: the tag
+            name of the element.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-bold">How to remove an event listener from a DOM element?</div>
+        <div class="collapse-content">
+          <p>
+            You can use the removeEventListener method to remove an event listener from a DOM element. The method takes
+            the same parameters as the addEventListener method.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-[#faedd4] footer  mt-16 p-24">
+
+  </footer>
 </body>
+
 </html>

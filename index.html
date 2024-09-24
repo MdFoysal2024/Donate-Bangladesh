@@ -20,33 +20,37 @@
             font-family: "Lexend", sans-serif;
             font-style: normal;
         }
+
+       
     </style>
 
 
 </head>
 
-<body class="lexend-font">
-    <header class="container mx-auto px-6 mt-12 ">
-        <nav class="bg-[#F9F7F3] p-4 ">
-            <div class="navbar ">
-                <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl px-8 bg-[#B4F461]" href="./blog.html">Blog</a>
+<body class="lexend-font relative">
+    <header class="sticky top-0 z-50">
+        <section class="bg-[#faedd4] bg-opacity-90 p-12">
+            <nav class="container mx-auto px-6 ">
+                <div class="navbar ">
+                    <div class="navbar-start">
+                        <a class="btn btn-ghost text-xl px-8 bg-[#B4F461]" href="./blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-center items-center lg:flex gap-4">
+                        <img src="./images/logo.png" alt="">
+                        <p class="text-lg font-extrabold hidden lg:flex">Donate Bangladesh</p>
+                    </div>
+                    <div class="navbar-end">
+                        <img src="./images/coin.png" alt="">
+                        <p class="pl-2"><span id="account-balance">5500</span> BDT</p>
+                    </div>
                 </div>
-                <div class="navbar-center items-center lg:flex gap-4">
-                    <img src="./images/logo.png" alt="">
-                    <p class="text-lg font-extrabold hidden lg:flex">Donate Bangladesh</p>
-                </div>
-                <div class="navbar-end">
-                    <img src="./images/coin.png" alt="">
-                    <p class="pl-2"><span id="account-balance">5500</span> BDT</p>
-                </div>
-            </div>
-        </nav>
-        <div class="text-center mt-24 ">
-            <button id="btn-donation" class="btn text-xl px-8 bg-[#B4F461]">Donation</button>
-            <button id="btn-history" class="btn  text-xl ml-2 px-10 border-gray-300">History</button>
-        </div>
+            </nav>
+        </section>
     </header>
+    <div class="text-center mt-24 ">
+        <button id="btn-donation" class="btn text-xl px-8 bg-[#B4F461]">Donation</button>
+        <button id="btn-history" class="btn  text-xl ml-2 px-10 border-gray-300">History</button>
+    </div>
 
 
     <main class="container mx-auto px-6 mt-12 ">
@@ -219,7 +223,7 @@
 
         <div id="history-container" class="history-section hidden ">
 
-          
+
 
 
         </div>
@@ -236,8 +240,7 @@
 
     </main>
 
-    <footer>
-
+    <footer class="bg-[#faedd4]  bottom-0  mt-32 p-24">
 
     </footer>
 
