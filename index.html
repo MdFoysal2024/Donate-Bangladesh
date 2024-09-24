@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
-<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- Tailwind & Daisy UI Styles Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,7 +27,7 @@
 
 <body class="lexend-font">
     <header class="container mx-auto px-6 mt-12 ">
-        <nav class="bg-yellow-100 p-4">
+        <nav class="bg-[#F9F7F3] p-4">
             <div class="navbar ">
                 <div class="navbar-start">
                     <a class="btn btn-ghost text-xl px-8 bg-[#B4F461]" href="./blog.html">Blog</a>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="navbar-end">
                     <img src="images/coin.png" alt="">
-                    <p class="pl-2"><span>5500</span> BDT</p>
+                    <p class="pl-2"><span id="page-balance">5500</span> BDT</p>
                 </div>
             </div>
         </nav>
@@ -56,7 +56,7 @@
         <div id="donation-container" class="donation-section ">
 
             <!-- Donation Section-01 -->
-            <section >
+            <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
@@ -64,25 +64,28 @@
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="">
-                                <p class="pl-2"><span>7800</span> BDT</p>
+                                <p class="pl-2"><span id="old-donation-balance">7800</span> BDT</p>
                             </div>
-                            <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <h1 id="flood-area" class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                             <p class="py-8 text-justify">
-                                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                                donation will help provide essential supplies and to those affected by this disaster. Every
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
-                            <input class="p-4 w-full border border-gray-300 rounded-lg" type="text"
-                                placeholder="Write Donation Amount"> <br>
-                            <button class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate Now</button>
+                            <input id="input-field-value" class="p-4 w-full border border-gray-300 rounded-lg"
+                                type="text" placeholder="Write Donation Amount"> <br>
+                            <button id="btn-donate" class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
+                                Now</button>
                         </div>
                     </div>
                 </div>
             </section>
-    
+
             <!-- Donation Section-02 -->
-            <section >
+            <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
@@ -94,8 +97,10 @@
                             </div>
                             <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
                             <p class="py-8 text-justify">
-                                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                                donation will help provide essential supplies and to those affected by this disaster. Every
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
@@ -106,13 +111,14 @@
                     </div>
                 </div>
             </section>
-    
+
             <!-- Donation Section-03 -->
-            <section >
+            <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/lakshmipur.jpg" class="lg:w-[50%] rounded-lg shadow-2xl" alt="Image Loading..."/>
+                        <img src="images/lakshmipur.jpg" class="lg:w-[50%] rounded-lg shadow-2xl"
+                            alt="Image Loading..." />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="">
@@ -120,8 +126,10 @@
                             </div>
                             <h1 class="text-2xl font-bold">Donate for Flood at Lakshmipur, Bangladesh</h1>
                             <p class="py-8 text-justify">
-                                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                                donation will help provide essential supplies and to those affected by this disaster. Every
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
@@ -132,13 +140,13 @@
                     </div>
                 </div>
             </section>
-    
+
             <!-- Donation Section-04 -->
-            <section >
+            <section>
                 <div class="hero bg-base-200  border bg-gray-200  
                 my-16 rounded-lg p-12 ">
                     <div class="hero-content flex-col gap-12 lg:flex-row">
-                        <img src="images/sylhet.jpg" class=" lg:w-[50%] rounded-lg shadow-2xl"  alt="Image Loading..."/>
+                        <img src="images/sylhet.jpg" class=" lg:w-[50%] rounded-lg shadow-2xl" alt="Image Loading..." />
                         <div class="lg:w-[50%]">
                             <div class="flex py-2">
                                 <img src="images/coin.png" alt="Image Loading...">
@@ -146,8 +154,10 @@
                             </div>
                             <h1 class="text-2xl font-bold">Donate for Flood at Sylhet, Bangladesh</h1>
                             <p class="py-8 text-justify">
-                                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                                donation will help provide essential supplies and to those affected by this disaster. Every
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your
+                                donation will help provide essential supplies and to those affected by this disaster.
+                                Every
                                 contribution, big or small, makes difference. Please join us in supporting the relief
                                 efforts and making a positive impact on the lives of those in need.
                             </p>
@@ -159,13 +169,21 @@
                 </div>
             </section>
         </div>
-        
+
 
         <!-- History Section Start Here -->
 
-<div id="history-container" class="history-section hidden ">
-<h2 class="text-center text-3xl font-bold">Our Donation History</h2>
-</div>
+        <div id="history-container" class="history-section hidden ">
+
+            <h2 class="text-center text-3xl font-bold">Our Donation History</h2>
+
+            <!-- <div class="border font-bold bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
+                <p>Lorem ipsum adipisicing elit. Mollitia.</p>
+                <p>Dolor sit, amet consectetur adipisicing elit.</p>
+               
+            </div> -->
+
+        </div>
 
 
 
@@ -187,6 +205,7 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/features.js"></script>
+    <script src="./js/donateBtn.js"></script>
 </body>
 
 </html>

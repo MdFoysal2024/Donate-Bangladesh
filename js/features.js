@@ -1,4 +1,4 @@
-console.log('24-09-25')
+
 
 document.getElementById('btn-history').addEventListener('click', function(){
 
