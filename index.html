@@ -77,8 +77,39 @@
                             </p>
                             <input id="input-field-value" class="p-4 w-full border border-gray-300 rounded-lg"
                                 type="text" placeholder="Write Donation Amount"> <br>
-                            <button id="btn-donate" class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
+                                
+                            <button id="btn-donate" onclick="my_modal_5.showModal()"
+                                class="btn text-xl bg-[#B4F461] mt-8 w-full text-center">Donate
                                 Now</button>
+
+                            <div class=" text-center justify-center ">
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+                                    <form method="dialog" class="modal-box ">
+                                        <div class=" align-middle   ">
+                                            <div>
+
+                                                <h1 class="text-5xl font-extrabold pt-4">Congrats!</h1>
+                                                <img id="image" class=" w-12 mt-8 mx-auto " src="./images/coin.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-10">
+
+                                                <p>You Have Donated for Humankind</p>
+                                                <h3 class="font-bold text-2xl pt-4 ">Successfully</h3>
+
+                                            </div>
+                                            <div class="modal-action justify-center">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button
+                                                    class="btn  text-lg  border border-gray-300 rounded-full  my-4 px-10 ">Close
+                                                    Confirmation</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -177,11 +208,6 @@
 
             <h2 class="text-center text-3xl font-bold">Our Donation History</h2>
 
-            <!-- <div class="border font-bold bg-[#F9F7F3] border-gray-200 rounded-lg p-8 mt-12">
-                <p>Lorem ipsum adipisicing elit. Mollitia.</p>
-                <p>Dolor sit, amet consectetur adipisicing elit.</p>
-               
-            </div> -->
 
         </div>
 
