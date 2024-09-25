@@ -21,13 +21,20 @@
             font-style: normal;
         }
 
-       
+        
+        .active-btn:focus {
+            background-color: #B4F461;
+        }
+
+        .active-donation{
+           background-color: #B4F461;
+        }
     </style>
 
 
 </head>
 
-<body class="lexend-font relative">
+<body class="lexend-font ">
     <header class="sticky top-0 z-50">
         <section class="bg-[#faedd4] bg-opacity-90 p-12">
             <nav class="container mx-auto px-6 ">
@@ -48,8 +55,9 @@
         </section>
     </header>
     <div class="text-center mt-24 ">
-        <button id="btn-donation" class="btn text-xl px-8 bg-[#B4F461]">Donation</button>
-        <button id="btn-history" class="btn  text-xl ml-2 px-10 border-gray-300">History</button>
+
+        <button id="btn-donation" class="btn active-donation active-btn border-gray-300 text-xl px-8 ">Donation</button>
+        <button id="btn-history" class="btn  active-btn text-xl ml-2 px-10 border-gray-300">History</button>
     </div>
 
 
@@ -240,7 +248,7 @@
 
     </main>
 
-    <footer class="bg-[#faedd4]  bottom-0  mt-32 p-24">
+    <footer class="bg-[#faedd4]   bottom-0  mt-32 p-24  ">
 
     </footer>
 
